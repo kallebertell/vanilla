@@ -1,4 +1,8 @@
 Vanilla::Application.routes.draw do
+  resources :posts
+
+  get "/" => redirect("/posts")
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
